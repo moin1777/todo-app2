@@ -9,7 +9,7 @@ function App() {
   const [reRender, setReRender] = useState(0);
 
   // infite request will occurrs
-  // fetch("http://localhost:3000/todos")
+  // fetch("https://be.todoapp.malekmoin.com/todos")
   //   .then((response) => {
   //     response.json()
   //       .then((value) => {
@@ -18,7 +18,7 @@ function App() {
   //   });
 
   useEffect(() => {
-    fetch("http://localhost:3000/todos")
+    fetch("https://be.todoapp.malekmoin.com/todos")
     .then((response) => {
       response.json()
         .then((value) => {

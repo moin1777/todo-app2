@@ -14,7 +14,7 @@ function Todo ({id, title, description, completed, setReRender}) {
       <h4>{description}</h4>
       <button onClick={(e) => {
         const id = e.target.parentElement.getAttribute("id");
-        fetch(`http://localhost:3000/completed/${id}`, {
+        fetch(`https://be.todoapp.malekmoin.com/completed/${id}`, {
           method: "PUT",
         }).then(async (response) => {
           await response.json();

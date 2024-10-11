@@ -8,7 +8,7 @@ export default function ({reRender, setReRender}) {
       <input type={"text"} placeholder={"enter title"} onChange={e => setTitle(e.target.value)}/> <br/><br/>
       <input type={"text"} placeholder={"enter description"} onChange={e => setDescription(e.target.value)}/> <br/><br/>
       <button onClick={() => {
-        fetch("http://localhost:3000/todo", {
+        fetch("https://be.todoapp.malekmoin.com/todo", {
           method: "POST",
           body: JSON.stringify({
             title,
